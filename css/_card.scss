@@ -1,0 +1,56 @@
+.card {
+	background-color: $card-background;
+	display: flex;
+	align-items: stretch;
+	max-width: 1140px;
+	border-radius: 1rem;
+	margin: 5%;
+}
+
+.card-info {
+	height: auto;
+	max-width: 570px;
+	padding: 6%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.card-text {
+	h1 {
+		color: $main-heading-text;
+		font-size: 2.25rem;
+		margin-bottom: 20px;
+		span {
+			color: $accent;
+		}
+	}
+	p {
+		color: $main-paragraph;
+		padding-right: 75px;
+	}
+}
+
+.card-stats {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+	padding-right: 75px;
+}
+
+.card-data {
+	.data {
+		color: $main-heading-text;
+		font-size: 1.6rem;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+	.data-name {
+		color: $main-paragraph;
+		font-family: 'Lexend Deca', sans-serif;
+		font-size: 0.9rem;
+		text-transform: uppercase;
+		margin-right: 30px;
+	}
+}

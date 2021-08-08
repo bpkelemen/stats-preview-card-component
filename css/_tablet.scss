@@ -1,0 +1,41 @@
+@media screen and (min-width: 420px) and (max-width: 1100px) {
+	.card {
+		flex-direction: column-reverse;
+	}
+	.card-info {
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.card-text {
+		h1 {
+			text-align: center;
+		}
+
+		p {
+			text-align: center;
+			padding: 0;
+		}
+	}
+
+	.card-stats {
+		justify-content: center;
+		padding: 5px 35px;
+	}
+
+	.desktop-image {
+		display: none;
+	}
+	.card-image {
+		position: relative;
+		background-color: $accent;
+		border-radius: 1rem 1rem 0 0;
+	}
+
+	img {
+		display: block;
+		mix-blend-mode: multiply;
+		width: 100%;
+		height: auto;
+	}
+}

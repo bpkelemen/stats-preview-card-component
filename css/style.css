@@ -1,2 +1,214 @@
+/*Variables*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #090b1a;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .attribution {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.75);
+}
+.container .attribution a {
+  text-decoration: none;
+  color: #aa5cdb;
+}
+.container .attribution p {
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #1b1938;
+  display: flex;
+  align-items: stretch;
+  max-width: 1140px;
+  border-radius: 1rem;
+  margin: 5%;
+}
+
+.card-info {
+  height: auto;
+  max-width: 570px;
+  padding: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.card-text h1 {
+  color: white;
+  font-size: 2.25rem;
+  margin-bottom: 20px;
+}
+.card-text h1 span {
+  color: #aa5cdb;
+}
+.card-text p {
+  color: rgba(255, 255, 255, 0.75);
+  padding-right: 75px;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-right: 75px;
+}
+
+.card-data .data {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.card-data .data-name {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+@media screen and (min-width: 1100px) {
+  .mobile-image {
+    display: none;
+  }
+
+  .card-image {
+    position: relative;
+    background-color: #aa5cdb;
+    border-radius: 0 1rem 1rem 0;
+    width: 100%;
+    height: auto;
+  }
+
+  img {
+    mix-blend-mode: multiply;
+    height: 100%;
+  }
+}
+@media screen and (min-width: 420px) and (max-width: 1100px) {
+  .card {
+    flex-direction: column-reverse;
+  }
+
+  .card-info {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .card-text h1 {
+    text-align: center;
+  }
+  .card-text p {
+    text-align: center;
+    padding: 0;
+  }
+
+  .card-stats {
+    justify-content: center;
+    padding: 5px 35px;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .card-image {
+    position: relative;
+    background-color: #aa5cdb;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  img {
+    display: block;
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 420px) {
+  .container .attribution p {
+    font-size: 0.7rem;
+  }
+
+  .card {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    min-width: 290px;
+  }
+
+  .card-info {
+    width: 100%;
+    max-width: 300px;
+    justify-content: space-around;
+  }
+
+  .card-text h1 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  .card-text h1 span {
+    color: #aa5cdb;
+  }
+  .card-text p {
+    text-align: center;
+    padding: 0;
+  }
+
+  .card-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .card-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .card-data .data {
+    font-size: 1.5rem;
+  }
+  .card-data .data-name {
+    font-size: 0.8rem;
+    margin: 0px 0px 25px 0px;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .card-image {
+    position: relative;
+    background-color: #aa5cdb;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  img {
+    display: block;
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

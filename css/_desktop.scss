@@ -1,0 +1,17 @@
+@media screen and (min-width: 1100px) {
+	.mobile-image {
+		display: none;
+	}
+	.card-image {
+		position: relative;
+		background-color: $accent;
+		border-radius: 0 1rem 1rem 0;
+		width: 100%;
+		height: auto;
+	}
+
+	img {
+		mix-blend-mode: multiply;
+		height: 100%;
+	}
+}
